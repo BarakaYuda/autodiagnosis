@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Diagnosis</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+   
+    <header >
+        <nav class="container">
+            <div class="logo">Auto-Diagnosis</div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#products">PRODUCT</a></li>
+            </ul>
+            <div class="nav-buttons">
+            <button type="button" onclick="openSignIn()">SIGN-IN</button>
+            <button type="button" onclick="openSignup()">SIGN-UP</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" id="home">
+        <div class="content">
+            <h1>SMART AUTO-DIAGNOSIS</h1>
+            <p>Diagnose vehicle issues instantly and connect with nearby verified garages and spare part suppliers.</p>
+          </div>
+    </section>
+
+   
+    <section id="about" class="about-section">
+        <h2>About Auto-Diagnosis</h2>
+        <p class="description">
+            Our platform simplifies vehicle troubleshooting by Giving you the driver the ability
+            to Diagnose you car using our AI INTELLIGENCE that is well trained to provide accurate
+            Results and sugesting to you nearby service provider</p>
+        
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/pic6.jpg" alt="Instant Diagnosis">
+                <h3>Instant Diagnostics</h3>
+                <p>Identify vehicle engine, electronic, and mechanical issues using smart fault detection.</p>
+            </div>
+            <div class="card">
+                <img src="img/pic3.jpg" alt="Nearby Garages">
+                <h3>AI INTELLIGENCE</h3>
+                <p>Locate top-rated mechanics and repair shops closest to your current location.</p>
+            </div>
+            <div class="card">
+                <img src="img/pic8.jpg" alt="Spare Parts">
+                <h3>Nearby service provider</h3>
+                <p>Find original and compatible spare parts directly from verified local shops.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="products" class="products-section">
+        <h2> WHY AUTO-DIAGNOSIS </h2>
+        <p class="description">Empowering drivers with AI-driven diagnostics for fast, accurate vehicle troubleshooting. Instantly pinpoint issues and connect with top-rated nearby mechanics and spare parts suppliers."</p>
+    <div class="products-container">
+        <div class="product-image-holder">
+            <img src="/img/pic1.jpg"  alt="poduct1">  
+            <div class="products-description">
+                    <p> we not only provide detailed report , <br> we provide realtime report that can guide you on taking your next move
+                <br>.</p>
+            </div>
+        </div>
+         <div class="product-image-holder2">
+            <img src="/img/pic3.jpg"  alt="poduct1">  
+            <div class="products-description2">
+           <p> we not only provide detailed report , <br> we provide realtime report that can guide you on taking your next move</p>
+            </div>
+        </div>
+         <div class="product-image-holder3">
+            <img src="/img/recovery.jpg"  alt="poduct1">  
+            <div class="products-description3">
+            <p> "Fast, reliable car pickup and roadside recovery whenever you need it. 
+                We locate your breakdown point and connect you with nearby recovery teams in real time."</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+  
+    <div id="signupForm" class="form" >
+        <div class="form-content">
+            <span class="close-btn" onclick="closeSignup()">&times;</span>
+            <h2>Create an Account</h2>
+            <form  onsubmit="handleSignup(event)"  >
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <label for="">Choose category</label>
+                <select id="category" name="user-category">
+                    <option value="car-owner">car-owner</option>
+                    <option value="garage-owner">garage-owner</option>
+                    <option value="spare-shop">spare-shop</option>
+                    <option value="spare-garage">spare-shop & Garage</option>
+                    <option value="recovery-pickup">recovery pickup</option>
+                </select>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+     <div id="SIGN_IN_FORM" class="sign-in">
+        <div class="signin_form">
+            <span class="close-btn" onclick="closeSignin()">&times;</span>
+            <h2>sign-in</h2>
+            <form  onsubmit="handleSignin(event)" >
+               <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+              
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-contents">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Product</a></li>
+                    <li><a href="#" onclick="openSignup()">Sign Up</a></li>
+                    <li><a href="#" onclick="openSignIn()">Sign In</a></li>
+                </ul>
+            </div>
+        <div class="footer-contacts">
+                <h4>Contact Info</h4>
+                <p>Email: info@autodiagnosis.com</p>
+                <p>Phone: +255 651 421 747</p>
+                <p>Location: Tanzania</p>
+        </div>
+        <div class="footer-products">
+            <h4>Our products</h4>
+                <ul>
+                    <li><a href="#">Instant Diagnosis</a></li>
+                    <li><a href="#">Garage link up</a></li>
+                    <li><a href="#">Spare Parts Marketplace</a></li>
+                </ul>
+        </div>
+    </div>
+     <div class="footer-bottom">
+            <p>&copy; 2026 Auto-Diagnosis. All Rights Reserved.</p>
+        </div>
+</footer>
+    <script src="home.js"></script>
+</body>
+</html>
