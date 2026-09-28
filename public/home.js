@@ -50,9 +50,9 @@ async function handleSignup(event) {
 
 async function handleSignin(event) {
     event.preventDefault(); 
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("loginemail").value;
     
-    const password_hash = document .getElementById("password").value.trim();
+    const password_hash = document .getElementById("loginpassword").value.trim();
 
     
 

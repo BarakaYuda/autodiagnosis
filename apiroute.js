@@ -68,10 +68,6 @@ app.post('/api/login', async(req,res)=>{
 
     const user = userSign.rows[0];
 
-    console.log('Found User in DB:', user.email);
-        console.log('Entered Password:', password_hash);
-        console.log('Stored DB Hash:', user.password_hash);
-
     const isPasswordValid = await bcrypt.compare(password_hash, user.password_hash);
 
     if(!isPasswordValid){
