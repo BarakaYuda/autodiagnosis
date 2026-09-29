@@ -69,6 +69,7 @@ async function handleSignin(event) {
     if (response.ok) {
             alert(`Login successful! Welcome back, ${result.user.name}.`);
             localStorage.setItem("user", JSON.stringify(result.user));
+            
             window.location.href = "dashboard.html";
             closeSignin();
         } else {
